@@ -47,28 +47,29 @@ nav h1 {
   z-index: 9;
 }
 #menu-box {
-  height: 100vh;
+  height: calc(100vh - 50px);
   max-width: 1200px;
   display: flex;
   flex-direction: column;
-  margin: 50px auto;
+  margin: 50px auto 0 auto;
   background: black;
   color: white;
   text-align: center;
   padding-top: 50px;
-  font-size: 30px;
+  font-size: 20px;
   position: fixed;
   top: 0;
   left: 0;
   right: -444%;
   transition: .5s;
+  overflow-y: scroll;
 }
 #menu-box.open {
   transition: .5s;
   right:0;
 }
 #menu-box a {
-  margin: 20px auto 20px 40px;
+  margin: 20px auto;
   border: 1px solid rgb(255, 255, 255, 0.3);
   border-radius: 4px;
   padding: 5px 15px;
