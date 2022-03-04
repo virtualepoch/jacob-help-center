@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+body {
+  max-width: 1200px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin: 0 auto;
+}
+nav {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #4e5565;
+}
+nav img {
+  height: 30px;
+  padding: 10px;
+  float: left;
+}
+nav h1 {
+  display: inline;
+  width: fit-content;
+  line-height: 50px;
+  color: green;
+}
+#menubutton {
+  font-size: 25px;
+  color: white;
+  padding: 0 15px;
+  cursor: pointer;
+  line-height: 50px;
+}
+
+.search-box {
+  background-color: black;
+  height: 100px;
+  padding: 50px;
+}
+.search-bar {
+  background-color: white;
+  height: 50px;
+  line-height: 50px;
+  cursor: pointer;
+  padding: 0 50px;
+  border-radius: 15px;
+}
+.color-box {
+  display: block;
+  background-color: #2f3657;
+  height: 50px;
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.flex-box {
+  flex: 100%;
+  border-bottom: 2px solid rgb(73, 73, 73);
+  margin: 0 10px;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .flex-box {
+    flex: 40%;
+  }
+}
+@media (min-width: 900px) {
+  .flex-box {
+    flex: 30%;
+  }
+}
+
+.flex-box img {
+  flex: 100%;
+  display: block;
+  height: 70px;
+  padding: 10px;
+  margin: 10px auto;
+}
+.flex-box h2 {
+  text-align: center;
+  color: rgb(51, 51, 51);
+}
+.flex-box p {
+  text-align: center;
+  padding: 30px;
+}
