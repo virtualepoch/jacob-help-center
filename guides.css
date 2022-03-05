@@ -1,0 +1,47 @@
+.guides-nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  height: 50px;
+  margin: 0 auto;
+  background: #2f3657;
+  color: white;
+  font-size: 8px;
+  line-height: 50px;
+}
+.guides-nav h1 {
+  margin: auto 0 auto 30px;
+  height: 25px;
+  line-height: 25px;
+}
+#guides-nav-button {
+  margin: auto 30px auto 0;
+  font-size: 20px;
+}
+#guides-nav-box {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.guide-link-box {
+  display: flex;
+  height: 50px;
+  border: 1px solid gray;
+  border-top: none;
+  font-size: 8px;
+  cursor: pointer;
+}
+.guide-link-box h1 {
+  margin: auto 0 auto 30px;
+}
+.product-overview {
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.product-overview h2 {
+  padding: 30px 30px;
+}
+.product-overview p {
+  padding: 10px 30px;
+}
