@@ -24,12 +24,14 @@ nav {
   left: 0;
   margin: 0 auto;
   background: rgb(0, 0, 51);
+  z-index: 10;
 }
 .nav-box {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  z-index: 11;
 }
 nav img {
   height: 20px;
@@ -101,14 +103,11 @@ nav h1 {
   cursor: pointer;
   transition: 0.5s;
 }
-#top {
-  transition: 0.5s;
-}
 .search-box {
   background-image: url(/images/pexels-laura-tancredi-1280.jpg);
   background-size: cover;
   background-color: black;
-  margin-top: 50px;
+  margin-top: 55px;
   padding: 50px;
 }
 .search-bar {
@@ -181,10 +180,12 @@ nav h1 {
 }
 .featured-articles li {
   padding: 2px;
-  cursor: pointer;
 }
 .featured-articles li:hover {
-  color: green;
+  color: rgb(153, 204, 0);
+}
+.featured-articles a {
+  cursor: pointer;
 }
 .help-bar {
   text-align: center;

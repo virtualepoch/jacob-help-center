@@ -21,10 +21,15 @@ function scroll() {
   }
 }
 var guides_nav_box = document.getElementById("guides-nav-box");
+
 function guidesOpen(){
   if (guides_nav_box.className == "open"){
 guides_nav_box.className = "";
   }else{
     guides_nav_box.className = "open"
   }
+}
+
+function scrollToTop(){
+  window.scrollTo(0, 0);
 }
