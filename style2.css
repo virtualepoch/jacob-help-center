@@ -5,9 +5,8 @@ body::-webkit-scrollbar {
   max-width: 1200px;
 
   margin: 55px auto;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
+  
+  padding: 10px 30px;
   background-color: #2f3657;
   background-image: none;
 }
@@ -16,8 +15,11 @@ body::-webkit-scrollbar {
   color: white;
 }
 .search-bar {
-    min-width: 500px;
-  margin: 30px 30px;
+    border: 2px solid red;
+    display: block;
+    max-width: 800px;
+  margin: 20px auto;
+  
   
 }
 #article-page-1 {
@@ -32,6 +34,11 @@ body::-webkit-scrollbar {
   height: fit-content;
   padding: 0 20px;
   border-right: 1px solid rgb(230, 230, 230);
+}
+@media (max-width:900px) {
+    #side-nav-container{
+        display: none;
+    }
 }
 #side-nav-box {
   background-color: #e2e2e2;
