@@ -3,7 +3,7 @@ body::-webkit-scrollbar {
 }
 .search-box {
   max-width: 1200px;
-  height: 100px;
+
   margin: 55px auto;
   padding: 0;
   display: flex;
@@ -16,8 +16,9 @@ body::-webkit-scrollbar {
   color: white;
 }
 .search-bar {
-  margin: auto 30px;
-  flex: 30%;
+    min-width: 500px;
+  margin: 30px 30px;
+  
 }
 #article-page-1 {
   max-width: 1200px;
