@@ -8,6 +8,7 @@
   color: white;
   font-size: 8px;
   line-height: 50px;
+  cursor: pointer;
 }
 .guides-nav h1 {
   margin: auto 0 auto 30px;
@@ -15,33 +16,52 @@
   line-height: 25px;
 }
 #guides-nav-button {
-  margin: auto 30px auto 0;
+  line-height: 50px;
+  width: 50px;
   font-size: 20px;
+  text-align: center;
 }
 #guides-nav-box {
   max-width: 1200px;
   margin: 0 auto;
+  background-color: rgb(243, 243, 243);
+  display: none;
 }
-
+#guides-nav-box.open {
+  display: block;
+}
 .guide-link-box {
   display: flex;
-  height: 50px;
-  border: 1px solid gray;
+  height: 55px;
+  border: 1px solid rgb(200, 200, 200);
   border-top: none;
   font-size: 8px;
   cursor: pointer;
+  color: rgb(49, 49, 49);
+}
+.active{
+    background-color: rgb(219, 217, 236);
 }
 .guide-link-box h1 {
   margin: auto 0 auto 30px;
 }
-.product-overview {
+.product-overview, .content-section-1 {
   display: block;
   max-width: 1200px;
   margin: 0 auto;
 }
-.product-overview h2 {
-  padding: 30px 30px;
+.product-overview h2, .content-section-1 h2 {
+  padding: 20px 0 15px 30px;
+  font-size: 30px;
 }
-.product-overview p {
+.product-overview p, .content-section-1 p {
   padding: 10px 30px;
+  font-size: 15px;
+}
+.product-overview a, .content-section-1 a {
+  padding: 10px 30px;
+  font-size: 17px;
+  color: rgb(153, 204, 0);
+  display: block;
+  cursor: pointer;
 }

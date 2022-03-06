@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Inter:wght@200&display=swap");
+html {
+  scroll-behavior: smooth;
+}
 * {
   padding: 0;
   margin: 0;
@@ -34,7 +37,7 @@ nav img {
 }
 nav h1 {
   width: fit-content;
-  line-height: 50px;
+  line-height: 55px;
   color: rgb(255, 255, 255);
   font-size: 20px;
   margin-left: 30px;
@@ -44,7 +47,7 @@ nav h1 {
   color: white;
   padding: 0 15px;
   cursor: pointer;
-  line-height: 50px;
+  line-height: 55px;
 }
 #menu-box {
   height: calc(100vh - 50px);
@@ -88,8 +91,8 @@ nav h1 {
   right: 30px;
   border: 2px solid rgb(153, 204, 0);
   border-radius: 5px;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   padding: auto;
   font-size: 40px;
   font-weight: 500;
@@ -98,9 +101,11 @@ nav h1 {
   cursor: pointer;
   transition: 0.5s;
 }
-
+#top {
+  transition: 0.5s;
+}
 .search-box {
-  background-image: url(/images/pexels-laura-tancredi-7078666.jpg);
+  background-image: url(/images/pexels-laura-tancredi-1280.jpg);
   background-size: cover;
   background-color: black;
   margin-top: 50px;
@@ -113,7 +118,7 @@ nav h1 {
   cursor: pointer;
   padding: 0 20px;
   margin: 0 auto;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 .color-box {
   display: block;

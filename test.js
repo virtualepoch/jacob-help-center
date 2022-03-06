@@ -20,3 +20,11 @@ function scroll() {
     document.getElementById("to-top-button").style.bottom = "-100px";
   }
 }
+var guides_nav_box = document.getElementById("guides-nav-box");
+function guidesOpen(){
+  if (guides_nav_box.className == "open"){
+guides_nav_box.className = "";
+  }else{
+    guides_nav_box.className = "open"
+  }
+}
