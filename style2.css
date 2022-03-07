@@ -67,11 +67,17 @@ body::-webkit-scrollbar {
 }
 #article-page {
   padding: 5px 30px;
-  border: 1px solid rgb(223, 223, 223);
+  
 }
-#article-page i {
+#article-page i,#article-page.active i {
   margin: auto 10px auto 0;
   color: cornflowerblue;
+}
+#article-page.active {
+  margin: auto 10px auto 0;
+  color: cornflowerblue;
+  border: 1px solid rgb(194, 194, 194);
+  border-radius: 5px;
 }
 #article-section {
   max-width: 900px;
