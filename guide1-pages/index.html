@@ -32,7 +32,6 @@
     <a onclick="scrollToTop()" id="to-top-button"><span class="bi bi-chevron-up"></span></a>
 
     <div class="search-box">
-      
       <div class="search-bar"><i style="padding-right: 20px" class="fa fa-search"></i>Search our articles</div>
       <a>Home /</a>
       <a>Guide #1 /</a>
@@ -40,19 +39,59 @@
     </div>
     <div id="article-page-1">
       <div id="side-nav-container">
-        <div id="side-nav-box">Guide 1<i class="fas fa-angle-right arrow-right"></i></div>
-        <div id="side-nav-box-pages">Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
-        <div id="side-nav-box-pages">Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
-        <div id="side-nav-box-pages">Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
-        <div id="side-nav-box-pages">Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
-        <div id="side-nav-box-pages">Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
-
-        <div id="side-nav-box">Guide 2<i class="fas fa-angle-right arrow-right"></i></div>
-        <div id="side-nav-box">Guide 3<i class="fas fa-angle-right arrow-right"></i></div>
-        <div id="side-nav-box">Guide 4<i class="fas fa-angle-right arrow-right"></i></div>
-        <div id="side-nav-box">Guide 5<i class="fas fa-angle-right arrow-right"></i></div>
-        <div id="side-nav-box">Frequently Asked Questions<i class="fas fa-angle-right arrow-right"></i></div>
-      </div>
+        <div id="side-nav-box" onclick="expandGuide1()">Guide 1<i class="fas fa-angle-right arrow-right"></i></div>
+        <div id="guide-1-pages">
+          <div id="side-nav-box-pages" onclick="expandArticles()">Guide 1 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+          <div id="article-pages-box">
+              <div id="article-page"><i class="fa fa-file-zip-o"></i>Article 1</div>
+              <div id="article-page"><i class="fa fa-file-zip-o"></i>Article 2</div>
+          </div>
+          <div id="side-nav-box-pages">Guide 1 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+          <div id="side-nav-box-pages">Guide 1 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+          <div id="side-nav-box-pages">Guide 1 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+          <div id="side-nav-box-pages">Guide 1 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+        </div>
+        <div id="side-nav-box" onclick="expandGuide2()">Guide 2<i class="fas fa-angle-right arrow-right"></i></div>
+        <div id="guide-2-pages">
+            <div id="side-nav-box-pages">Guide 2 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+            <div id="side-nav-box-pages">Guide 2 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+            <div id="side-nav-box-pages">Guide 2 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+            <div id="side-nav-box-pages">Guide 2 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+            <div id="side-nav-box-pages">Guide 2 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+          </div>
+        <div id="side-nav-box" onclick="expandGuide3()">Guide 3<i class="fas fa-angle-right arrow-right"></i></div>
+        <div id="guide-3-pages">
+            <div id="side-nav-box-pages">Guide 3 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+            <div id="side-nav-box-pages">Guide 3 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+            <div id="side-nav-box-pages">Guide 3 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+            <div id="side-nav-box-pages">Guide 3 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+            <div id="side-nav-box-pages">Guide 3 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+          </div>
+        <div id="side-nav-box" onclick="expandGuide4()">Guide 4<i class="fas fa-angle-right arrow-right"></i></div>
+        <div id="guide-4-pages">
+            <div id="side-nav-box-pages">Guide 4 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+            <div id="side-nav-box-pages">Guide 4 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+            <div id="side-nav-box-pages">Guide 4 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+            <div id="side-nav-box-pages">Guide 4 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+            <div id="side-nav-box-pages">Guide 4 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+          </div>
+        <div id="side-nav-box" onclick="expandGuide5()">Guide 5<i class="fas fa-angle-right arrow-right"></i></div>
+        <div id="guide-5-pages">
+            <div id="side-nav-box-pages">Guide 5 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+            <div id="side-nav-box-pages">Guide 5 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+            <div id="side-nav-box-pages">Guide 5 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+            <div id="side-nav-box-pages">Guide 5 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+            <div id="side-nav-box-pages">Guide 5 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+          </div>
+        <div id="side-nav-box" onclick="expandGuide6()">Frequently Asked Questions<i class="fas fa-angle-right arrow-right"></i></div>
+        <div id="guide-6-pages">
+            <div id="side-nav-box-pages">Guide 6 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+            <div id="side-nav-box-pages">Guide 6 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+            <div id="side-nav-box-pages">Guide 6 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+            <div id="side-nav-box-pages">Guide 6 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+            <div id="side-nav-box-pages">Guide 6 Article Pages<i class="fas fa-angle-right arrow-right"></i></div>
+          </div>  
+    </div>
 
       <div id="article-section">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus doloribus alias reprehenderit voluptate molestias magni recusandae quo ducimus in, illum ad minus earum officiis impedit, beatae voluptas mollitia quae eaque quia. Iure quae tenetur blanditiis dolore soluta numquam tempora ex molestiae veniam, maxime, placeat libero nam consequuntur explicabo sequi! Ad quis dolorum totam rerum inventore mollitia eligendi. Accusantium, incidunt, placeat harum ex maxime vero sapiente explicabo molestias enim, doloremque consequuntur? Facere, rem aut vel eum incidunt ipsa et molestias quos commodi qui autem labore quisquam ullam laboriosam reprehenderit tempore. Labore neque nihil illo dolorum quod cumque vitae exercitationem, in voluptates reiciendis, dolorem excepturi incidunt fugiat nostrum! Dignissimos totam laboriosam alias impedit aspernatur tempore, consequatur dicta tempora placeat voluptate dolores saepe officiis, perspiciatis cupiditate omnis? Praesentium officiis fuga, vitae facere voluptate tempore fugiat impedit incidunt nesciunt autem ad inventore culpa magnam eligendi doloribus accusantium quam commodi, odio tempora nisi. Ullam omnis eum labore dolorem sunt ab cumque sed aliquid impedit, fugit amet ea exercitationem. Nisi eos hic, sunt nam ullam aliquid provident ea, corrupti laboriosam nemo ab quam nulla dolore doloribus itaque tempore. Veniam molestiae in harum explicabo nulla fugiat neque facilis totam quisquam repellendus, hic officiis enim

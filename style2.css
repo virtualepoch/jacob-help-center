@@ -5,7 +5,7 @@ body::-webkit-scrollbar {
   max-width: 1200px;
 
   margin: 55px auto;
-  
+
   padding: 10px 30px;
   background-color: #2f3657;
   background-image: none;
@@ -15,12 +15,10 @@ body::-webkit-scrollbar {
   color: white;
 }
 .search-bar {
-    border: 2px solid red;
-    display: block;
-    max-width: 800px;
+  border: 1px solid rgb(255, 136, 136);
+  display: block;
+  max-width: 800px;
   margin: 20px auto;
-  
-  
 }
 #article-page-1 {
   max-width: 1200px;
@@ -35,10 +33,10 @@ body::-webkit-scrollbar {
   padding: 0 20px;
   border-right: 1px solid rgb(230, 230, 230);
 }
-@media (max-width:900px) {
-    #side-nav-container{
-        display: none;
-    }
+@media (max-width: 900px) {
+  #side-nav-container {
+    display: none;
+  }
 }
 #side-nav-box {
   background-color: #e2e2e2;
@@ -50,11 +48,30 @@ body::-webkit-scrollbar {
 .arrow-right {
   float: right;
 }
+#guide-1-pages,
+#guide-2-pages,
+#guide-3-pages,
+#guide-4-pages,
+#guide-5-pages,
+#guide-6-pages {
+  display: none;
+}
 #side-nav-box-pages {
   margin: 2px 10px;
   padding: 10px;
   font-size: 16px;
   color: #000000;
+}
+#article-pages-box {
+  display: none;
+}
+#article-page {
+  padding: 5px 30px;
+  border: 1px solid rgb(223, 223, 223);
+}
+#article-page i {
+  margin: auto 10px auto 0;
+  color: cornflowerblue;
 }
 #article-section {
   max-width: 900px;
