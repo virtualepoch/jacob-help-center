@@ -6,11 +6,11 @@ function menuOpen() {
   if (menubox.className == "open") {
     menubox.className = "";
     bars.style.display = "";
-    xmark.style.display = "none";
+    xmark.style.display = "";
   } else {
     menubox.className = "open";
     bars.style.display = "none";
-    xmark.style.display = "";
+    xmark.style.display = "inline-block";
   }
 }
 
