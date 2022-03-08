@@ -10,13 +10,7 @@ function menuOpen() {
 
 var menu_button = document.getElementById("menu-button");
 
-function menuClick() {
-  if (menu_button.style.transform == "scale(1)") {
-    menu_button.style.transform = "scale(.5)";
-  } else {
-    menu_button.style.transform = "scale(1)";
-  }
-}
+
 window.onscroll = function () {
   scroll();
 };
