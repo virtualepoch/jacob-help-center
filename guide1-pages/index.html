@@ -14,12 +14,14 @@
   <body>
     <nav>
       <div class="nav-box">
-        <a href="/index.html"> <h1 id="main-header">JACOB'S HELP CENTER</h1></a>
-        <a id="menu-button" onclick="menuOpen()">
-          <i class="fas fa-bars"></i>
-        </a>
+      <a href="/index.html">
+      <h1 id="main-header">JACOB'S HELP CENTER</h1></a>
+      <a id="menu-button" onclick="menuOpen(), menuClick()">
+          <i id="topnav-bars" class="fas fa-bars"></i>
+          <i id="topnav-xmark" class="fa-solid fa-xmark"></i>
+      </a>
       </div>
-    </nav>
+  </nav>
     <div id="menu-box">
       <a href="/1jacobs.html">Jacob's Help (Guide #1)</a>
       <a href="/2integrations.html">Integrations Help (Guide #2)</a>

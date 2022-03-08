@@ -1,15 +1,18 @@
 var menubox = document.getElementById("menu-box");
+var bars = document.getElementById("topnav-bars");
+var xmark = document.getElementById("topnav-xmark");
 
 function menuOpen() {
   if (menubox.className == "open") {
     menubox.className = "";
+    bars.style.display = "";
+    xmark.style.display = "none";
   } else {
     menubox.className = "open";
+    bars.style.display = "none";
+    xmark.style.display = "";
   }
 }
-
-var menu_button = document.getElementById("menu-button");
-
 
 window.onscroll = function () {
   scroll();
@@ -22,18 +25,25 @@ function scroll() {
     document.getElementById("to-top-button").style.bottom = "-100px";
   }
 }
+
+function scrollToTop() {
+  window.scrollTo(0, 0);
+}
+
 var guides_nav_box = document.getElementById("guides-nav-box");
+var minus_icon = document.getElementById("minus-icon");
+var plus_icon = document.getElementById("plus-icon");
 
 function guidesOpen() {
   if (guides_nav_box.className == "open") {
     guides_nav_box.className = "";
+    plus_icon.style.display = "";
+    minus_icon.style.display = "none";
   } else {
     guides_nav_box.className = "open";
+    plus_icon.style.display = "none";
+    minus_icon.style.display = "block";
   }
-}
-
-function scrollToTop() {
-  window.scrollTo(0, 0);
 }
 
 var guide_1_pages = document.getElementById("guide-1-pages");

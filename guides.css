@@ -20,11 +20,18 @@
   height: 25px;
   line-height: 25px;
 }
-#guides-nav-button {
+#plus-icon {
   line-height: 50px;
   width: 50px;
   font-size: 20px;
   text-align: center;
+}
+#minus-icon {
+  line-height: 50px;
+  width: 50px;
+  font-size: 20px;
+  text-align: center;
+  display: none;
 }
 #guides-nav-box {
   max-width: 1200px;
