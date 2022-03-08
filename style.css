@@ -9,7 +9,7 @@ html {
   box-sizing: border-box;
   list-style: none;
   font-family: "Inter", sans-serif;
-  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;         /*<<<<<REALLY COOL*/
 }
 body {
   width: 100vw;
@@ -71,7 +71,7 @@ nav h1 {
   left: 0;
   right: -555%;
   transition: 0.5s;
-  overflow-y: scroll;
+ 
 }
 #menu-box.open {
   transition: 0.5s;
