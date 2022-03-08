@@ -17,7 +17,7 @@ body {
   overflow-y: scroll;
   margin: 0 auto;
 }
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
   display: none;
 }
 nav {
@@ -71,7 +71,7 @@ nav h1 {
   left: 0;
   right: -555%;
   transition: 0.5s;
- 
+  overflow-y: scroll;
 }
 #menu-box.open {
   transition: 0.5s;
