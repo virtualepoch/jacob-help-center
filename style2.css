@@ -25,11 +25,9 @@ body::-webkit-scrollbar {
   display: flex;
 }
 #side-nav-button{
-
     position: fixed;
     z-index: 10;
     top:50%;
-    
     left: 30px;
     border: 2px solid rgb(153, 204, 0);
     border-radius: 5px;
@@ -42,6 +40,7 @@ body::-webkit-scrollbar {
     text-align: center;
     cursor: pointer;
     transition: 0.5s;
+    display: none;
   }
 #side-nav-container {
   display: flex;
@@ -49,7 +48,8 @@ body::-webkit-scrollbar {
   max-width: 280px;
   min-width: 230px;
   height: fit-content;
-  padding: 0 20px;
+  padding: 10px 20px;
+  background-color: white;
   border-right: 1px solid rgb(230, 230, 230);
 }
 #side-nav-box {
@@ -111,8 +111,12 @@ body::-webkit-scrollbar {
   padding: 50px;
 }
 @media (max-width: 900px) {
-  #side-nav-continer {
-    position: relative;
-    left: 555%;
+  #side-nav-container {
+    position: fixed;
+    z-index: 9;
+    left: -1111px;
+  }
+  #side-nav-button{
+    display: block;
   }
 }

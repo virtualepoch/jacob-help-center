@@ -26,6 +26,15 @@ function scroll() {
   }
 }
 
+var side_nav_container = document.getElementById("side-nav-container");
+function showSideNav() {
+  if (side_nav_container.style.left == "-1111px") {
+    side_nav_container.style.left = "10px";
+  } else {
+    side_nav_container.style.left = "-1111px";
+  }
+}
+
 function scrollToTop() {
   window.scrollTo(0, 0);
 }
@@ -63,8 +72,8 @@ var side_nav_box = document.getElementById("side-nav-box");
 
 function expandGuide1() {
   if (guide_1_pages.style.display == "") {
-        guide_1_pages.style.display = "block";
-        side_nav_box.style.transition = "1s";
+    guide_1_pages.style.display = "block";
+    side_nav_box.style.transition = "1s";
     guide_1_arrow.style.transform = "rotate(90deg)";
     guide_1_arrow.style.transition = ".3s";
   } else {
