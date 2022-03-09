@@ -15,7 +15,6 @@ body::-webkit-scrollbar {
   color: white;
 }
 .search-bar {
-  
   display: block;
   max-width: 800px;
   margin: 20px auto;
@@ -25,29 +24,54 @@ body::-webkit-scrollbar {
   margin: 0 auto;
   display: flex;
 }
+#side-nav-button{
+
+    position: fixed;
+    z-index: 10;
+    top:50%;
+    
+    left: 30px;
+    border: 2px solid rgb(153, 204, 0);
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+    padding: auto;
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(153, 204, 0);
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+  }
 #side-nav-container {
   display: flex;
   flex-direction: column;
-  min-width: 290px;
+  max-width: 280px;
+  min-width: 230px;
   height: fit-content;
   padding: 0 20px;
   border-right: 1px solid rgb(230, 230, 230);
 }
-@media (max-width: 900px) {
-  #side-nav-container {
-    display: none;
-  }
-}
 #side-nav-box {
-  background-color: #e2e2e2;
+  background-color: #f5f5f5;
   margin: 2px;
   padding: 10px;
   font-size: 17px;
   font-weight: bolder;
+  cursor: pointer;
 }
-.arrow-right {
+#side-nav-box .box-move.clicked{
+  transition: 1s;
+}
+#guide-1-arrow,
+#guide-2-arrow,
+#guide-3-arrow,
+#guide-4-arrow,
+#guide-5-arrow,
+#guide-6-arrow {
   float: right;
 }
+
 #guide-1-pages,
 #guide-2-pages,
 #guide-3-pages,
@@ -55,7 +79,10 @@ body::-webkit-scrollbar {
 #guide-5-pages,
 #guide-6-pages {
   display: none;
+  transition-property: display 1s;
+  cursor: pointer;
 }
+
 #side-nav-box-pages {
   margin: 2px 10px;
   padding: 10px;
@@ -67,9 +94,9 @@ body::-webkit-scrollbar {
 }
 #article-page {
   padding: 5px 30px;
-  
 }
-#article-page i,#article-page.active i {
+#article-page i,
+#article-page.active i {
   margin: auto 10px auto 0;
   color: cornflowerblue;
 }
@@ -82,4 +109,10 @@ body::-webkit-scrollbar {
 #article-section {
   max-width: 900px;
   padding: 50px;
+}
+@media (max-width: 900px) {
+  #side-nav-continer {
+    position: relative;
+    left: 555%;
+  }
 }

@@ -53,46 +53,74 @@ var guide_4_pages = document.getElementById("guide-4-pages");
 var guide_5_pages = document.getElementById("guide-5-pages");
 var guide_6_pages = document.getElementById("guide-6-pages");
 
+var guide_1_arrow = document.getElementById("guide-1-arrow");
+var guide_2_arrow = document.getElementById("guide-2-arrow");
+var guide_3_arrow = document.getElementById("guide-3-arrow");
+var guide_4_arrow = document.getElementById("guide-4-arrow");
+var guide_5_arrow = document.getElementById("guide-5-arrow");
+var guide_6_arrow = document.getElementById("guide-6-arrow");
+var side_nav_box = document.getElementById("side-nav-box");
+
 function expandGuide1() {
   if (guide_1_pages.style.display == "") {
-    guide_1_pages.style.display = "block";
+        guide_1_pages.style.display = "block";
+        side_nav_box.style.transition = "1s";
+    guide_1_arrow.style.transform = "rotate(90deg)";
+    guide_1_arrow.style.transition = ".3s";
   } else {
     guide_1_pages.style.display = "";
+    guide_1_arrow.style.transform = "none";
+    side_nav_box.style.transition = "1s";
   }
 }
 function expandGuide2() {
   if (guide_2_pages.style.display == "") {
     guide_2_pages.style.display = "block";
+    guide_2_arrow.style.transform = "rotate(90deg)";
+    guide_2_arrow.style.transition = ".3s";
   } else {
     guide_2_pages.style.display = "";
+    guide_2_arrow.style.transform = "none";
   }
 }
 function expandGuide3() {
   if (guide_3_pages.style.display == "") {
     guide_3_pages.style.display = "block";
+    guide_3_arrow.style.transform = "rotate(90deg)";
+    guide_3_arrow.style.transition = ".3s";
   } else {
     guide_3_pages.style.display = "";
+    guide_3_arrow.style.transform = "none";
   }
 }
 function expandGuide4() {
   if (guide_4_pages.style.display == "") {
     guide_4_pages.style.display = "block";
+    guide_4_arrow.style.transform = "rotate(90deg)";
+    guide_4_arrow.style.transition = ".3s";
   } else {
     guide_4_pages.style.display = "";
+    guide_4_arrow.style.transform = "none";
   }
 }
 function expandGuide5() {
   if (guide_5_pages.style.display == "") {
     guide_5_pages.style.display = "block";
+    guide_5_arrow.style.transform = "rotate(90deg)";
+    guide_5_arrow.style.transition = ".3s";
   } else {
     guide_5_pages.style.display = "";
+    guide_5_arrow.style.transform = "none";
   }
 }
 function expandGuide6() {
   if (guide_6_pages.style.display == "") {
     guide_6_pages.style.display = "block";
+    guide_6_arrow.style.transform = "rotate(90deg)";
+    guide_6_arrow.style.transition = ".3s";
   } else {
     guide_6_pages.style.display = "";
+    guide_6_arrow.style.transform = "none";
   }
 }
 
@@ -101,7 +129,10 @@ var articlesBox = document.getElementById("article-pages-box");
 function expandArticles() {
   if (articlesBox.style.display == "") {
     articlesBox.style.display = "block";
+    right_arrow.style.transform = "rotate(90deg)";
+    right_arrow.style.transition = ".3s";
   } else {
     articlesBox.style.display = "";
+    right_arrow.style.transform = "none";
   }
 }
