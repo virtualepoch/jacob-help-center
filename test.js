@@ -29,7 +29,7 @@ function scroll() {
 var side_nav_container = document.getElementById("side-nav-container");
 function showSideNav() {
   if (side_nav_container.style.left == "-1111px") {
-    side_nav_container.style.left = "10px";
+    side_nav_container.style.left = "0";
     side_nav_container.style.top = "50px";
   } else {
     side_nav_container.style.left = "-1111px";

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/style2.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+    <script src="https://kit.fontawesome.com/77ea0c8449.js" crossorigin="anonymous"></script>
+    <title>Guide 1 - Article 1</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-box">
+        <a href="/index.html"> <h1 id="main-header">JACOB'S HELP CENTER</h1></a>
+        <a id="menu-button" onclick="menuOpen()">
+          <i id="topnav-bars" class="fas fa-bars"></i>
+          <i id="topnav-xmark" class="fa-solid fa-xmark"></i>
+        </a>
+      </div>
+    </nav>
+    <div id="menu-box">
+      <a href="/guide1.html">Guide 1</a>
+      <a href="/guide2.html">Guide 2</a>
+      <a href="/guide3.html">Guide 3</a>
+      <a href="/guide4.html">Guide 4</a>
+      <a href="/guide5.html">Guide 5</a>
+      <a href="/guide6.html">Guide 6</a>
+    </div>
+    <a onclick="scrollToTop()" id="to-top-button"><span class="bi bi-chevron-up"></span></a>
+
+    <div class="search-box">
+      <div class="search-bar"><i style="padding-right: 20px" class="fa fa-search"></i>Search our articles</div>
+      <a>Jacob's Help Center <i class="fas fa-caret-right" style="font-size: 10px"></i></a>
+      <a>Guide 1 <i class="fas fa-caret-right" style="font-size: 10px"></i></a>
+      <a style="border-bottom: 1px solid rgb(233, 233, 233)">Article 1 (Overview)</a>
+    </div>
+    <div id="article-page-1">
+      <div id="side-nav-button" onclick="showSideNav()"><i class="bi bi-chevron-left left-arrow"></i></div>
+      <div id="side-nav-container">
+        <div id="side-nav-box" class="box-move" onclick="expandGuide1()">Guide 1<i id="guide-1-arrow" class="fas fa-angle-right"></i></div>
+        <div id="guide-1-pages">
+          <div id="side-nav-box-pages" onclick="expandArticles()">Guide 1 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+          <div id="article-pages-box">
+            <a href="/guide1-pages/article01.html" id="article-page" class="active"><i class="fa fa-file-zip-o"></i>Article 1 (Overview)</a>
+            <a href="/guide1-pages/article02.html" id="article-page"><i class="fa fa-file-zip-o"></i>Article 2</a>
+          </div>
+          <div id="side-nav-box-pages">Guide 1 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+          <div id="side-nav-box-pages">Guide 1 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+          <div id="side-nav-box-pages">Guide 1 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+          <div id="side-nav-box-pages">Guide 1 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+        </div>
+        <div id="side-nav-box" class="box-move" onclick="expandGuide2()">Guide 2<i id="guide-2-arrow" class="fas fa-angle-right arrow-right"></i></div>
+        <div id="guide-2-pages">
+          <div id="side-nav-box-pages">Guide 2 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+          <div id="side-nav-box-pages">Guide 2 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+          <div id="side-nav-box-pages">Guide 2 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+          <div id="side-nav-box-pages">Guide 2 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+          <div id="side-nav-box-pages">Guide 2 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+        </div>
+        <div id="side-nav-box" onclick="expandGuide3()">Guide 3<i id="guide-3-arrow" class="fas fa-angle-right arrow-right"></i></div>
+        <div id="guide-3-pages">
+          <div id="side-nav-box-pages">Guide 3 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+          <div id="side-nav-box-pages">Guide 3 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+          <div id="side-nav-box-pages">Guide 3 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+          <div id="side-nav-box-pages">Guide 3 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+          <div id="side-nav-box-pages">Guide 3 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+        </div>
+        <div id="side-nav-box" onclick="expandGuide4()">Guide 4<i id="guide-4-arrow" class="fas fa-angle-right arrow-right"></i></div>
+        <div id="guide-4-pages">
+          <div id="side-nav-box-pages">Guide 4 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+          <div id="side-nav-box-pages">Guide 4 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+          <div id="side-nav-box-pages">Guide 4 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+          <div id="side-nav-box-pages">Guide 4 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+          <div id="side-nav-box-pages">Guide 4 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+        </div>
+        <div id="side-nav-box" onclick="expandGuide5()">Guide 5<i id="guide-5-arrow" class="fas fa-angle-right arrow-right"></i></div>
+        <div id="guide-5-pages">
+          <div id="side-nav-box-pages">Guide 5 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+          <div id="side-nav-box-pages">Guide 5 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+          <div id="side-nav-box-pages">Guide 5 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+          <div id="side-nav-box-pages">Guide 5 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+          <div id="side-nav-box-pages">Guide 5 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+        </div>
+        <div id="side-nav-box" onclick="expandGuide6()">Frequently Asked Questions<i id="guide-6-arrow" class="fas fa-angle-right arrow-right"></i></div>
+        <div id="guide-6-pages">
+          <div id="side-nav-box-pages">Guide 6 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+          <div id="side-nav-box-pages">Guide 6 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+          <div id="side-nav-box-pages">Guide 6 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+          <div id="side-nav-box-pages">Guide 6 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+          <div id="side-nav-box-pages">Guide 6 Article Pages<i id="side-nav-arrow-right" class="fas fa-angle-right arrow-right"></i></div>
+        </div>
+      </div>
+
+      <div id="article-section">
+        <h1>Guide 1</h1>
+        <h1>Article 1 (Overview)</h1>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus doloribus alias reprehenderit voluptate molestias magni recusandae quo ducimus in, illum ad minus earum officiis impedit, beatae voluptas mollitia quae eaque quia. Iure quae tenetur blanditiis dolore soluta numquam tempora ex molestiae veniam, maxime, placeat libero nam consequuntur explicabo sequi! Ad quis dolorum totam rerum inventore mollitia eligendi. Accusantium, incidunt, placeat harum ex maxime vero sapiente explicabo molestias enim, doloremque consequuntur? Facere, rem aut vel eum incidunt ipsa et molestias quos commodi qui autem labore quisquam ullam laboriosam reprehenderit tempore. Labore neque nihil illo dolorum quod cumque vitae exercitationem, in voluptates reiciendis, dolorem excepturi incidunt fugiat nostrum! Dignissimos totam laboriosam alias impedit aspernatur tempore, consequatur dicta tempora placeat voluptate dolores saepe officiis, perspiciatis cupiditate omnis? Praesentium officiis fuga, vitae facere voluptate tempore fugiat impedit incidunt nesciunt autem ad inventore culpa magnam eligendi doloribus accusantium quam commodi, odio tempora nisi. Ullam omnis eum labore dolorem sunt ab cumque sed aliquid impedit, fugit amet ea exercitationem. Nisi eos hic, sunt nam ullam aliquid provident ea, corrupti laboriosam nemo ab quam nulla dolore doloribus itaque tempore. Veniam molestiae in harum explicabo nulla fugiat neque facilis totam quisquam repellendus, hic officiis enim
+        similique unde incidunt rem mollitia nam amet quidem, dolores placeat ipsa tenetur. Molestias, quae quos nostrum tempore ratione recusandae eos. Asperiores iste soluta harum assumenda minus non accusantium aliquid repudiandae accusamus quaerat? Nemo expedita quam repellat, eligendi accusantium veritatis dignissimos esse saepe quos similique voluptate vel nostrum fuga rerum? Fuga a porro maxime? Consectetur incidunt ab quas quod odio similique provident sint rerum porro aspernatur deserunt esse omnis distinctio nemo expedita animi ea tempore inventore obcaecati sit quasi, pariatur possimus ipsum? Rem illo odit natus at molestias non delectus soluta totam dignissimos adipisci deleniti omnis corporis reprehenderit dolore vitae tenetur exercitationem repudiandae, possimus fugiat commodi qui. Obcaecati, laboriosam doloremque nulla dolor nobis possimus! Nulla eveniet vero ad accusantium voluptas asperiores velit suscipit provident aut alias ab, delectus fuga officia minima quisquam! Reiciendis, consequatur. Odio reiciendis fugit delectus labore at officia eos tenetur repellendus? Vero aliquid est mollitia itaque odit nesciunt cupiditate esse reprehenderit aspernatur alias. Beatae culpa inventore eum ab cum exercitationem eaque quas dignissimos, quod fugit maxime asperiores ipsum illum at quo labore ea magni sunt, iusto perspiciatis, cumque temporibus animi? At earum adipisci ut quam. Aliquam ipsum odio eaque. Vel, quod nostrum illo, repellendus a esse quia, repellat porro
+        optio mollitia at ratione illum beatae. Totam obcaecati, culpa, nihil sunt possimus dolores corporis labore sequi delectus, et nemo inventore vitae! Quia quas voluptatum ducimus, ullam facilis rerum nihil molestias dolor eius voluptatem maxime veniam commodi cum? Perspiciatis voluptate corrupti alias omnis? Autem, consectetur! Exercitationem, harum omnis est repellendus illo ullam velit nisi nesciunt, magni nam quos necessitatibus porro provident aliquid soluta, iusto tempore? Repudiandae soluta quibusdam sapiente in alias veniam aperiam suscipit repellat, quos sunt ipsam hic magni, aut tempora. Vitae maxime nesciunt eligendi sit modi saepe, vero omnis necessitatibus, molestias nemo sunt! Architecto ipsa laudantium nulla in vel repellendus eligendi.
+      </div>
+    </div>
+    <div class="featured-articles">
+      <h2>Featured Articles</h2>
+      <ul>
+        <li><a>What's new in Jacob's Help Center?</a></li>
+        <li><a>SkyNet Rate Changes - January 9, 2077 | Overview</a></li>
+        <li><a>Contact Jacob's Help Center Support</a></li>
+        <li><a>Jacob's Help Center Account Login Issues</a></li>
+      </ul>
+    </div>
+    <div class="help-bar">
+      <h2>Didn't find what you were looking for?</h2>
+      <a class="contact-button">Contact Us</a>
+    </div>
+    <footer>
+      <div class="footer-box">
+        <h1>Jacob's Help Center</h1>
+        <div class="flex-box"></div>
+      </div>
+      <img src="/images/pexels-caleb-oquendo-7807602.jpg" alt="footer-image" />
+    </footer>
+    <script src="/test.js"></script>
+  </body>
+</html>
