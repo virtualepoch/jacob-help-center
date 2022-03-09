@@ -3,9 +3,7 @@ body::-webkit-scrollbar {
 }
 .search-box {
   max-width: 1200px;
-
   margin: 55px auto;
-
   padding: 10px 30px;
   background-color: #2f3657;
   background-image: none;
@@ -24,24 +22,22 @@ body::-webkit-scrollbar {
   margin: 0 auto;
   display: flex;
 }
-#side-nav-button{
-    position: fixed;
-    z-index: 10;
-    top:50%;
-    left: 30px;
-    border: 2px solid rgb(153, 204, 0);
-    border-radius: 5px;
-    height: 50px;
-    width: 50px;
-    padding: auto;
-    font-size: 40px;
-    font-weight: 500;
-    color: rgb(153, 204, 0);
-    text-align: center;
-    cursor: pointer;
-    transition: 0.5s;
-    display: none;
-  }
+#side-nav-button {
+  position: fixed;
+  z-index: 10;
+  top: 40vh;
+  left: 0;
+  border-radius: 5px;
+  height: 50px;
+  width: 50px;
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(153, 204, 0);
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+  display: none;
+}
 #side-nav-container {
   display: flex;
   flex-direction: column;
@@ -60,9 +56,6 @@ body::-webkit-scrollbar {
   font-weight: bolder;
   cursor: pointer;
 }
-#side-nav-box .box-move.clicked{
-  transition: 1s;
-}
 #guide-1-arrow,
 #guide-2-arrow,
 #guide-3-arrow,
@@ -71,7 +64,6 @@ body::-webkit-scrollbar {
 #guide-6-arrow {
   float: right;
 }
-
 #guide-1-pages,
 #guide-2-pages,
 #guide-3-pages,
@@ -79,10 +71,8 @@ body::-webkit-scrollbar {
 #guide-5-pages,
 #guide-6-pages {
   display: none;
-  transition-property: display 1s;
-  cursor: pointer;
+    cursor: pointer;
 }
-
 #side-nav-box-pages {
   margin: 2px 10px;
   padding: 10px;
@@ -116,7 +106,7 @@ body::-webkit-scrollbar {
     z-index: 9;
     left: -1111px;
   }
-  #side-nav-button{
+  #side-nav-button {
     display: block;
   }
 }

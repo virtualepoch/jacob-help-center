@@ -74,6 +74,7 @@ nav h1 {
   top: 0;
   left: 0;
   right: -555%;
+  z-index: 111;
   transition: 0.5s;
   overflow-y: scroll;
 }
